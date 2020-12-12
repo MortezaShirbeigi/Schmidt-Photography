@@ -1,0 +1,31 @@
+// style for title
+.newsletter-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+// style for subtitle
+.newsletter-subtitle {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+// style for submit button
+.newsletter-submit {
+  width: 100%;
+  font-weight: bold;
+}
+// style for input placeholder
+.email-input::placeholder {
+  font-weight: bold;
+}
+
+//style for desktop version
+@media (min-width: 576px) {
+  // style for submit button
+  .newsletter-submit {
+    width: unset !important;
+  }
+  // style for email input
+  .email-input {
+    width: 18rem !important;
+  }
+}

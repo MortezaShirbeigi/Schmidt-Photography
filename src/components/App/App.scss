@@ -7,5 +7,7 @@ $theme-colors: (
 
 // change navbar links color
 $navbar-dark-color: #fff;
+//change padding nav-link for footer
+$nav-link-padding-y: 0.2rem;
 
 @import "~bootstrap/scss/bootstrap";
