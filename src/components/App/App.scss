@@ -7,7 +7,9 @@ $theme-colors: (
 
 // change navbar links color
 $navbar-dark-color: #fff;
-//change padding nav-link for footer
+// change padding nav-link for footer
 $nav-link-padding-y: 0.2rem;
+// change input focus color
+$input-btn-focus-color: #888;
 
 @import "~bootstrap/scss/bootstrap";
