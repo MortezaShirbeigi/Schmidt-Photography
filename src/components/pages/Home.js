@@ -1,11 +1,12 @@
 import React from "react";
 
 import Wrapper from "../../hoc/Wrapper";
+import Slider from "../Slider/Slider";
 
 const Home = () => {
   return (
     <Wrapper>
-      <h1 style={{ textAlign: "center" }}>Home</h1>
+      <Slider />
     </Wrapper>
   );
 };

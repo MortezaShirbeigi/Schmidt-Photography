@@ -1,0 +1,23 @@
+.carousel {
+  // style for navigation slider on hover
+  &:hover {
+    .carousel-control-next,
+    .carousel-control-prev {
+      display: flex;
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  // style for navigation slider
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+  // style for slider items
+  .carousel-item {
+    max-height: 42rem;
+  }
+}
