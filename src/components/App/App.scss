@@ -1,0 +1,11 @@
+// change bootstrap colors
+$theme-colors: (
+  "secondary": #000,
+  "primary": #fff,
+  "info": #444,
+);
+
+// change navbar links color
+$navbar-dark-color: #fff;
+
+@import "~bootstrap/scss/bootstrap";
