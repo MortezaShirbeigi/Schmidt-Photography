@@ -56,7 +56,7 @@ const Shop = () => {
             />
           </Col>
         </Row>
-        <Link to="/shop" className="nav-link">
+        <Link to="/shop">
           <Button className="mt-4" variant="outline-primary">
             View More
           </Button>
