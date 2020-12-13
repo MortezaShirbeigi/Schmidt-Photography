@@ -27,7 +27,7 @@ const RecentArticles = () => {
       <Row className="justify-content-center">
         <h2 className="mb-5">Recent Articles</h2>
       </Row>
-      <Articles loading={loading} posts={posts.splice(0, 3)} />
+      <Articles mdColumn={4} loading={loading} posts={posts.splice(0, 3)} />
       <Row className="justify-content-center">
         <Link to="/blog" className="nav-link">
           <Button

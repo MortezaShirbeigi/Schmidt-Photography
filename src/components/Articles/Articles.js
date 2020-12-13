@@ -5,14 +5,19 @@ import Wrapper from "../../hoc/Wrapper";
 import Article from "../Article/Article";
 import "./Articles.scss";
 
-const Articles = ({ loading, posts }) => {
+const Articles = ({ loading, posts, mdColumn }) => {
   return (
     <Wrapper>
       {loading ? <Loader /> : null}
       <Row>
         {posts.map((item) => {
           return (
-            <Col key={item.id} lg={{ span: 4 }}>
+            <Col
+              className="mb-5"
+              key={item.id}
+              md={{ span: mdColumn }}
+              lg={{ span: 4 }}
+            >
               <Article post={item} />
             </Col>
           );

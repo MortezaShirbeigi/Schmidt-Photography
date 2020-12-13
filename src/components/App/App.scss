@@ -9,7 +9,20 @@ $theme-colors: (
 $navbar-dark-color: #fff;
 // change padding nav-link for footer
 $nav-link-padding-y: 0.2rem;
-// change input focus color
+// change input and button focus color
 $input-btn-focus-color: #888;
+
+// change paggination color
+$pagination-color: #000;
+$pagination-bg: #fff;
+$pagination-border-color: #000;
+// change paggination active color
+$pagination-active-color: #fff;
+$pagination-active-bg: #000;
+$pagination-active-border-color: #000;
+// change paggination hover color
+$pagination-hover-color: #fff;
+$pagination-hover-bg: #555;
+$pagination-hover-border-color: #555;
 
 @import "~bootstrap/scss/bootstrap";
