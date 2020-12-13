@@ -4,6 +4,7 @@ import Wrapper from "../../hoc/Wrapper";
 import Slider from "../Slider/Slider";
 import About from "../About/About";
 import Shop from "../Shop/Shop";
+import RecentArticles from "../RecentArticles/RecentArticles";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Slider />
       <About />
       <Shop />
+      <RecentArticles />
     </Wrapper>
   );
 };
