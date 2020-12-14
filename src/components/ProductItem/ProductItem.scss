@@ -1,0 +1,9 @@
+.productBtn {
+  border-radius: 0 0 0.25rem 0.25rem;
+  &:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+}

@@ -8,6 +8,7 @@ import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
 import NotFound from "../pages/NotFound";
 import SingleArticle from "../pages/SingleArticle";
+import Shop from "../pages/Shop";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/contact" component={Contact} />
           <Route exact path="/blog" component={Blog} />
           <Route path="/blog/:id" component={SingleArticle} />
+          <Route path="/shop" component={Shop} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
