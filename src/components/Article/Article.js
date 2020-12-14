@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Article = ({ post }) => {
   return (
-    <Link key={post.id} to="/blog" className="article-link">
+    <Link key={post.id} to={`/blog/${post.id}`} className="article-link">
       <Card key={post.id} className="border-secondary">
         <div className="mask border-bottom border-secondary">
           <Card.Img

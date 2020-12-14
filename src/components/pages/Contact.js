@@ -30,7 +30,7 @@ const Contact = () => {
                     ref={inputRef}
                     type="text"
                     placeholder="Enter Your Name"
-                    autocomplete="off"
+                    autoComplete="off"
                   />
                 </Form.Group>
 
@@ -39,7 +39,7 @@ const Contact = () => {
                   <Form.Control
                     type="Email"
                     placeholder="Enter Your Email"
-                    autocomplete="off"
+                    autoComplete="off"
                   />
                 </Form.Group>
               </Form.Row>

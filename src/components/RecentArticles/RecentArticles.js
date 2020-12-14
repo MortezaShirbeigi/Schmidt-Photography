@@ -8,18 +8,17 @@ const RecentArticles = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const loadArticle = () => {
-    setLoading(true);
-    axios
-      .get("https://run.mocky.io/v3/e24a7338-0902-458a-9754-0bc88efbd6d2")
-      .then((response) => {
-        setLoading(false);
-        setPosts(response.data);
-      });
-  };
-
   useEffect(() => {
-    loadArticle();
+    const fetchPosts = async () => {
+      setLoading(true);
+      const res = await axios.get(
+        "https://run.mocky.io/v3/772f1622-ed0c-40d9-8f4d-764c0451b737"
+      );
+      setLoading(false);
+      setPosts(res.data);
+    };
+
+    fetchPosts();
   }, []);
 
   return (
@@ -27,7 +26,7 @@ const RecentArticles = () => {
       <Row className="justify-content-center">
         <h2 className="mb-5">Recent Articles</h2>
       </Row>
-      <Articles mdColumn={4} loading={loading} posts={posts.splice(0, 3)} />
+      <Articles mdColumn={4} loading={loading} posts={posts.slice(0, 3)} />
       <Row className="justify-content-center">
         <Link to="/blog" className="nav-link">
           <Button
